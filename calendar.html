@@ -22,19 +22,20 @@
     <link href="css/one-page-wonder.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
     
-    <!--<script>
+    <script>
       function copyURI(evt) {
           evt.preventDefault();
           navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
             /* clipboard successfully set */
+            document.getElementById("clipspan").innerHTML = "(link copied!)";
           }, () => {
             /* clipboard write failed */
           });
       }
-    </script>-->
-    <script>
+    </script>
+    <!--<script>
       var $temp = $("<input>");
       var $url = $(location).attr('href');
 
@@ -45,7 +46,7 @@
         $temp.remove();
         $("p#clipboard").text("(link copied!)");
       })
-    </script>
+    </script>-->
 
 
   </head>
@@ -87,7 +88,7 @@
                 <div class="hidden-desktop">
                     <iframe src="https://calendar.google.com/calendar/embed?src=crimsoncyberdefense%40gmail.com&ctz=America%2FChicago&mode=agenda" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
                 </div>
-                <p>Add the <a id="clipboard" href="https://calendar.google.com/calendar/ical/crimsoncyberdefense%40gmail.com/public/basic.ics">iCal subscription URL</a> to your own calendar!</p> <p id="clipboard">(click to copy)</p>
+                <p>Add the <a id="clipboard" href="https://calendar.google.com/calendar/ical/crimsoncyberdefense%40gmail.com/public/basic.ics" onclick="copyURI(event)">iCal subscription URL</a> to your own calendar! <span id="clipspan">(click to copy)</span></p>
             </div>
         </div>
       </div>
