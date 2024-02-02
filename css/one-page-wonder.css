@@ -54,7 +54,7 @@ header.masthead {
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
   /*background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);*/
-  background: url("../img/background.png");
+  background: url("../img/background.PNG");
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
