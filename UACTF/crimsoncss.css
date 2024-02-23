@@ -1,0 +1,34 @@
+body{
+    background-color: crimson;
+}
+
+h1, h2, h3{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3{
+    font-size: x-large;
+}
+
+p, label{
+    color: white;
+    font-size: large;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, li, a{
+    color: white;
+}
+
+a:visited{
+    color: black; 
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
