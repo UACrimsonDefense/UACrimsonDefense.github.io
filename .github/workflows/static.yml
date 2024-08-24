@@ -1,5 +1,6 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# "Simple" workflow for building deploying static content to GitHub Pages
+# Generated from the Static HTML action, edited using information from: https://dev.to/davorg/deploying-github-pages-site-with-github-workflows-3bhh
+name: Build & Deploy Static Content to Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -22,8 +23,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Upload GitHub Pages artifact
+      uses: actions/upload-pages-artifact@v3.0.1
   # Single deploy job since we're just deploying
   deploy:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
