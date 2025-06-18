@@ -22,13 +22,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href="css/universal.css" rel="stylesheet">
 
   </head>
 
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">Crimson Defense</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,27 +37,43 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="leadership.html">Club Leadership</a>
+                    <a class="dropdown-item" href="faq.html">FAQs</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Attend Meetings
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="generalclub.html">General Club</a>
+                    <a class="dropdown-item" href="compteam.html">Competition Team</a>
+                    <a class="dropdown-item" href="projectcrimson.html">Project Crimson</a>
+                    <a class="dropdown-item" href="certs.html">Cert Study Group</a>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About</a>
+                  <a class="nav-link" href="blog.html">Blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="compteam.html">Competition Team</a>
+                  <a class="nav-link" href="cdctf.html">CDCTF</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="crimsoncrossover.html">Crimson Crossover</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="projectcrimson.html">Project Crimson</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="outreach.html">UACTF</a>
+                  <a class="nav-link" href="outreach.html">Outreach</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
+          </ul>
           </div>
         </div>
       </nav>
@@ -67,7 +84,7 @@
           <div class="row">
             <div class="col-xl-12 mx-auto mb-3">
               <h1 class="masthead-heading mb-0">Competition Team</h1>
-              <h2 class="masthead-subheading mb-0">No experience needed!</h2>
+              <h2 class="masthead-subheading mb-0">Crimson Defense #1</h2>
             </div>
           </div>
         </div>
@@ -79,8 +96,8 @@
             <div class="row align-items-center">
                 <div class="p-5">
                   <h2 class="display-4">Crimson Defense Competition Team</h2>
-                  <p>Our Competition Team participates in many cyber security competitions, and are always willing to take on new members! If you are interested, stop by one of our meetings on Tuesdays at 6:45pm in The Tom Bevill Building Room 1066 (The Cyber Security Lab).
-                    Check out <strong>#competitions-info</strong> in our <a href="https://forms.gle/8KZW6QKiMKYJYsiv5" target="_blank">Discord</a> to see what Crimson Defense's Competition Team is currently competing in!
+                  <p>Our Competition Team participates in many cyber security competitions, and are always willing to take on new members! If you are interested, stop by one of our meetings on Tuesdays at 6:00pm in the Cyber Lab (Bevill 1066).
+                    Check out <strong>#comp-announcements</strong> in our <a href="https://forms.gle/8KZW6QKiMKYJYsiv5" target="_blank">Discord</a> to see what Crimson Defense's Competition Team is currently competing in!
                   </p>
                   <h3>Contact our Competition Team Captain in our Discord for more information or if you have any questions!</h3>
                 </div>
@@ -101,21 +118,13 @@
             <div class="col-lg-6 order-lg-1">
               <div class="p-5">
                 <h2 class="display-4">Competitions We Compete In:</h2>
-                <ul>
-                 <li><h4><a href="https://nationalcyberleague.org/competition" target="_blank">National Cyber League (NCL) CTF</a></h4>
-                  <p>NCL competitions are held twice a year, once during each semester. Students across the United States compete by solving as many puzzles as possible from the following categories: Open Source Intelligence, Cryptography, Log Analysis, Network Traffic Analysis, Scanning, Forensics, Password Cracking, Enumeration and Exploitation, and Web Application Security.</p>
-                  <p>In Fall 2024's NCL <a href="https://cyberskyline.com/data/power-ranking/fall-2024-national" target="_blank">Power Rankings</a>, the University of Alabama was ranked #25 nationally, and #11 in the Eastern US.</p>
-                </li>
-                 <li><h4><a href="https://www.hivestorm.org/" target="_blank">Hivestorm</a></h4>
-                  <p>Hivestorm is a live cyber defense competition, where each team is given an infected/destroyed system and they must secure it before time runs out.</p>
-                </li>
-                 <li><h4><a href="https://mitre-engenuity.org/growing-impact/ectf-embedded-capture-the-flag/" target="_blank">Mitre eCTF</a></h4>
-                  <p>Mitre's eCTF combines embedded systems with cyber security. Teams are given an embedded system and have to secure it during the Design Phase, and then attack other schools' systems during the Attack Phase.</p>
-                </li>
-                <li><h4><a href="https://uscc.cyberquests.org/" target="_blank">USCC Cyber Quests</a></h4>
-                  <p>USCC Cyber Quests are individual competitions that focus on real-world applications of cyber security skills learned in CTFs. Exceptional performance in the Cyber Quests qualifies you for the <a href="https://www.uscyberchallenge.org/cyber-camps" target="_blank">US Cyber Camps</a> in the Summer!</p>
-                </li>
-                </ul>
+                 <h4><a href="https://nationalcyberleague.org/competition" target="_blank">National Cyber League (NCL) CTF</a></h4>
+                    <p>NCL competitions are held twice a year, once during each semester. Students across the United States compete by solving as many puzzles as possible from the following categories: Open Source Intelligence, Cryptography, Log Analysis, Network Traffic Analysis, Scanning, Forensics, Password Cracking, Enumeration and Exploitation, and Web Application Security.</p>
+                    <p>In Spring 2025's NCL <a href="https://cyberskyline.com/data/power-ranking/spring-2025-national" target="_blank">Power Rankings</a>, the University of Alabama was ranked #18 nationally, and #5 in the Eastern US.</p>
+                  <h4><a href="https://www.hivestorm.org/" target="_blank">Hivestorm</a></h4>
+                    <p>Hivestorm is a live cyber defense competition, where each team is given an infected/destroyed system and they must secure it before time runs out.</p>
+                  <h4><a href="https://uscc.cyberquests.org/" target="_blank">USCC Cyber Quests</a></h4>
+                    <p>USCC Cyber Quests are individual competitions that focus on real-world applications of cyber security skills learned in CTFs. Exceptional performance in the Cyber Quests qualifies you for the <a href="https://www.uscyberchallenge.org/cyber-camps" target="_blank">US Cyber Camps</a> in the Summer!</p>
               </div>
             </div>
           </div>
@@ -127,7 +136,30 @@
           <div class="row align-items-center">
             <div class="col-lg-6 order-lg-2">
               <div class="p-5">
-                <img class="img-fluid rounded side-img" src="img/PC_teach1.JPG" alt="">
+                <img class="img-fluid rounded side-img" src="img/Crimson-Defense-X.png" alt="CDX Logo">
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <div class="p-5">
+                <h2 class="display-4">Competition Team Levels</h2>
+                <h4>CDX</h4>
+                  <p>CDX is a 7-person team consisting of a selected group of the top veteran competitors from Crimson Defense. Selection criteria is high, prospective members must have exceptional ability in multiple areas of CTF and other computer skills and must be a proven team player.</p>
+                <h4>Roll Tide</h4>
+                  <p>Roll Tide is a competitive team with no limit on the number of members. These members strive to learn and represent Crimson Defense well on the leaderboards. Any member who wishes to have a competitive experience will be placed in this level.</p>
+                <h4>Basilosaurus</h4>
+                  <p>The Basilosaurus team seeks to gain experience in competitions with an emphasis on learning over competition. This level is perfect for beginners and those who wish for a relaxed competition experience.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+              <div class="p-5">
+                <img class="img-fluid rounded side-img" src="img/competition.jpeg" alt="">
               </div>
             </div>
             <div class="col-lg-6 order-lg-1">
@@ -172,16 +204,22 @@
 
       <section>
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
+            <h2 class="display-4">Our Competition Team Achievements</h2>
               <div class="p-5">
-                <img class="img-fluid rounded side-img" src="img/CD_lab.jpg" alt="">
-               <!-- <img class="img-fluid rounded side-img" src="img/hackercolonthree.png" alt=""> -->
-              </div>
-            </div>
-            <h2 class="display-4" style="text-align: center;">Our Competition Team Achievements</h2>
-            <div class="col-lg-6 order-lg-1">
-              <div class="p-5">
+                <h3>NCL Spring 2025</h3>
+                  <h5>Team Game Diamond Rank (Top 150)</h5>
+                    <ul>
+                      <li><p><code>Crimson Defense</code> (Standard Bracket): Score: 2835/3000, Rank 16 / 1178</p></li>
+                      <li><p><code>Crimson Defense X</code> (Experienced Bracket): Score: 2770/3000, Rank 18 / 228</p></li>
+                    </ul>
+                  <h5>Individual Game Diamond Rank (Top 500)</h5>
+                    <ul>
+                      <li><p><code>shkorodi</code> (Standard Bracket): Score: 2615/3000, Rank 99 / 4602</p></li>
+                      <li><p><code>Reep236</code> (Standard Bracket): Score: 2585/3000, Rank 107 / 4602</p></li>
+                      <li><p><code>DrecMoo</code> (Standard Bracket): Score: 2390/3000, Rank 239 / 4602</p></li>
+                      <li><p><code>Wilzax</code> (Experienced Bracket): Score: 2305/3000, Rank 66 / 365</p></li>
+                      <li><p><code>adlee7</code> (Standard Bracket): Score: 2170/3000, Rank 477 / 4602</p></li>
+                    </ul>
                 <h3>USCC Cyber Quest Spring 2025</h3>
                 <ul>
                   <li><p><code>shkorodi</code> Rank 16 on US Scoreboard</p></li>
@@ -194,8 +232,8 @@
                 <h3>NCL Fall 2024</h3>
                   <h5>Team Game Diamond Rank (Top 150)</h5>
                     <ul>
-                      <li><p><code>Crimson Defense X</code> (Experienced Bracket): Score: 2830/3100, Rank 16 / 532</p></li>
-                      <li><p><code>Crimson Defense</code> (Standard Bracket): Score: 2975/3100, Rank 13 / 4984</p></li>
+                      <li><p><code>Crimson Defense</code> (Standard Bracket): Score: 2975/3100, Rank 13 / 1196</p></li>
+                      <li><p><code>Crimson Defense X</code> (Experienced Bracket): Score: 2830/3100, Rank 16 / 241</p></li>
                     </ul>
                   <h5>Individual Game Diamond Rank (Top 500)</h5>
                     <ul>
@@ -248,9 +286,7 @@
                         <li><p><code>Tanner Baine</code> (Standard Bracket): Rank 348 / 3296</p></li>
                         <li><p><code>jtman5</code> (Standard Bracket): Rank 447 / 3296</p></li>
                       </ul>
-              </div>
             </div>
-          </div>
         </div>
       </section>
 

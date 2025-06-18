@@ -22,6 +22,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/one-page-wonder.css" rel="stylesheet">
+    <link href="css/universal.css" rel="stylesheet">
 
    <!-- <script>
       $('#gFormsLink').blur(function () {
@@ -30,44 +31,62 @@
 
     </script> -->
 
+    <style> .button-menu {display: flex;flex-wrap: wrap;justify-content: center;gap: 20px;margin-top: 30px;}.circle-button {position: relative;width: 225px;height: 225px;border-radius: 50%;overflow: hidden;cursor: pointer;text-align: center;display: flex;align-items: center;justify-content: center;color: white;font-weight: bold;font-size: 16px;background-size: cover;background-position: center;transition: transform 0.3s ease;}.circle-button::after {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(220, 20, 60, 0.6);z-index: 1;}.circle-button span {position: relative;z-index: 2;padding: 10px;}.circle-button:hover {transform: scale(1.05);}@media (max-width: 600px) {.circle-button {width: 100px;height: 100px;font-size: 14px;}.button-menu a {text-decoration: none; color: inherit;}.button-menu a:visited {color: inherit;}.button-menu a:hover{text-decoration: none;}}</style>
+
+
   </head>
 
   <body>
 
     <!-- Navigation -->
-   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Crimson Defense</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="compteam.html">Competition Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="crimsoncrossover.html">Crimson Crossover</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projectcrimson.html">Project Crimson</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="outreach.html">UACTF</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
+       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Crimson Defense</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="leadership.html">Club Leadership</a>
+                    <a class="dropdown-item" href="faq.html">FAQs</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Attend Meetings
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="generalclub.html">General Club</a>
+                    <a class="dropdown-item" href="compteam.html">Competition Team</a>
+                    <a class="dropdown-item" href="projectcrimson.html">Project Crimson</a>
+                    <a class="dropdown-item" href="certs.html">Cert Study Group</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cdctf.html">CDCTF</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="outreach.html">Outreach</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
           </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
     <header class="masthead text-center text-white">
       <div class="masthead-content">
@@ -101,7 +120,7 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="p-5">
-              <img class="img-fluid rounded side-img" src="img/CD_Eday_24.jpg" alt="">
+              <img class="img-fluid rounded side-img" src="img/cd_meeting_lab.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6">
@@ -118,26 +137,59 @@
       </div>
     </section>
 
+ <section>
+        <div class="container">
+            <div class="p-5">
+               <h2 class="display-2" style="text-align: center;">Explore Crimson Defense</h2>
+               <div class="button-menu">
+                  <a href="blog.html"><div class="circle-button" style="background-image: url('img/cd_uai2.jpg');">
+                    <span>CD Blog</span>
+                  </div></a>
+                  <a href="cdctf.html"><div class="circle-button" style="background-image: url('img/cd_pcctf.jpg');">
+                    <span>CDCTF</span>
+                  </div></a> 
+                  <a href="leadership.html"><div class="circle-button" style="background-image: url('img/cd_pcctf2.jpg');">
+                    <span>Club Leadership</span>
+                  </div></a>
+                  <a href="compteam.html"><div class="circle-button" style="background-image: url('img/CD_compteam.PNG');">
+                    <span>Competition Team</span>
+                  </div></a>
+                  <a href="generalclub.html"><div class="circle-button" style="background-image: url('img/CD_passcrack_teach.jpg');">
+                    <span>General Club</span>
+                  </div></a>
+                  <a href="outreach.html"><div class="circle-button" style="background-image: url('img/CD_uactf_team.JPG');">
+                    <span>Outreach</span>
+                  </div></a>
+                  <a href="projectcrimson.html"><div class="circle-button" style="background-image: url('img/JTPresenting.JPG');">
+                    <span>Project Crimson</span>
+                  </div></a>
+                  <a href="certs.html"><div class="circle-button" style="background-image: url('img/cd_certstudygroup.jpg');">
+                    <span>Studying for Certs</span>
+                  </div></a>
+                </div>
+        </div>
+    </section>
+
     <section>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded side-img" src="img/CD_Eday_vert.JPEG" alt="">
+              <img class="img-fluid rounded side-img" src="img/cd_demouaathv.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-6 order-lg-1">
             <div class="p-5">
               <h2>Club Meeting Schedule</h2>
-              <p>Crimson Defense General Interest meetings are <b><u>every Wednesday at 6pm in The Tom Bevill Building Room 1066.</b></u>.</p>
-                <p>Some previous topics we have studied include denial of service attacks, malware analysis, nmap scans, SQL injection, phishing, and cryptography. We also host professional development meetings where representatives from companies in both the public and private sectors come to share their experiences, their work culture, and share upcoming internships and job openings. Join our Discord and/or email list to recieve updates about our meeting schedule!</p>
-              <p>Our <a href="compteam.html">Competition Team</a> meets <b><u>every other Tuesday at 6:45 pm in The Tom Bevill Building Room 1066.</u></b></p>
-                <p>Crimson Defense's Competition Team competes in national cyber security competitions every semester. Join if you want to gain experience in cyber security skills!</p>
-              <p><a href="projectcrimson.html">Project Crimson</a> meets <b><u>every Thursday at 6 pm-7 pm in the Cyber Lab (Bevill 1066).</u></b></p>
-                <p>Project Crimson is perfect for both inexperienced and experienced club members who want to learn more about any topic in cyber security!</p>
+              <p>Crimson Defense <a href="generalclub.html">General Interest</a> meetings are <b><u>every Wednesday at 6:00 pm in the UA Cyber Lab (Bevill 1066)</b></u>.</p>
+                <p>General Meetings feature introductions to cyber tools, technologies, lectures from cyber security professionals, and even interactive labs.</p>
+              <p>Our <a href="compteam.html">Competition Team</a> meets <b><u>every other Tuesday at 6:00 pm in the UA Cyber Lab (Bevill 1066)</u></b>.</p>
+                <p>Crimson Defense's Competition Team competes in national cyber security competitions every semester. Join if you want to gain experience in competing!</p>
+              <p><a href="projectcrimson.html">Project Crimson</a> meets <b><u>every Thursday at 6:00 pm in the UA Cyber Lab (Bevill 1066)</u></b>.</p>
+                <p>Project Crimson is perfect for both inexperienced and experienced club members who want to learn more about any topic in cyber security through one-on-one mentoring!</p>
               
               <h2>Join our Discord for more info!</h2>
-                <ul class="list-inline">
+              <ul class="list-inline">
                   <li class="list-inline-item" style="margin: auto; padding-top: 5px; margin-bottom: 5px;">
                     <a class="social-link rounded-circle text-white mr-2" target="_blank" href="https://forms.gle/8KZW6QKiMKYJYsiv5">
                       <i class="fab fa-brands fa-discord"></i>
@@ -158,8 +210,8 @@
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </li>
-                </ul>
-              </div>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -170,7 +222,6 @@
       <div class="container">
         <p class="m-0 text-center text-white small">Copyright &copy; Crimson Defense 2025</p>
       </div>
-      <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->

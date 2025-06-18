@@ -1,0 +1,41 @@
+a:link {
+  color: crimson;
+  text-decoration: none;
+}
+
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #800000;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+  color: #fff !important;
+  background-color: #343a40;
+}
+
+.caption {
+  font-style: italic;
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0.5rem;
+}
