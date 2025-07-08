@@ -39,3 +39,61 @@ html {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+.img-space {
+  padding: 15px;
+  margin: auto;
+}
+
+.box-arrow {
+  position: relative;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px;
+  margin-left: 2px;
+  clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  transition: opacity 0.3s;
+  background-color: rgba(220, 20, 60, 0.7); 
+}
+
+.box-arrow:hover {
+  opacity: 0.9;
+}
+
+.box-arrow a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.box-arrow a:hover {
+  text-decoration: underline;
+}
+
+.img-comp {
+  background-image: linear-gradient(rgba(220, 20, 60, 0.7), rgba(220, 20, 60, 0.7)), url('../img/CD_labzoom.jpg');
+}
+
+.img-general {
+  background-image: linear-gradient(rgba(220, 20, 60, 0.7), rgba(220, 20, 60, 0.7)), url('../img/CD_passcrack_teach.jpg');
+}
+
+.img-pc {
+  background-image: linear-gradient(rgba(220, 20, 60, 0.7), rgba(220, 20, 60, 0.7)), url('../img/JTPresenting.JPG');
+}
+
+.img-cert {
+  background-image: linear-gradient(rgba(220, 20, 60, 0.7), rgba(220, 20, 60, 0.7)), url('../img/cd_certstudygroup.jpg');
+}
+
+.fancy-text-box {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+}
