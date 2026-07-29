@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ title }} | Crimson Defense</title>
+    <link rel="stylesheet" href="/css/base.css">
 </head>
 <body>
-    <!-- TODO: NAV -->
+    {% include "nav.njk" %}
 
     {{content | safe }}
 

@@ -1,0 +1,149 @@
+.navbar {
+    width: 98%;
+    max-width: 1600px;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+
+    position: sticky;
+    top: 1rem;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* backdrop-filter lives on a pseudo-layer, not .navbar itself, so it
+   doesn't become the containing block for the fixed mobile menu */
+.navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+a.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 50%;
+    background: rgba(163, 32, 47, 0.12);
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.links li a {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: azure;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.links li a:hover {
+    color: #a3202f;
+    background: rgba(163, 32, 47, 0.12);
+}
+
+.logo {
+    height: 1.9rem;
+    width: 1.9rem;
+    object-fit: contain;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.hamburger:focus-visible {
+    outline: 1px solid #a3202f;
+    outline-offset: 4px;
+}
+
+.hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: azure;
+    transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.hamburger:hover span {
+    background: #a3202f;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.25rem;
+        position: fixed;
+        top: 4.5rem;
+        right: 1%;
+        width: min(70vw, 260px);
+        padding: 0.75rem;
+        border-radius: 1.5rem;
+        background: rgba(20, 20, 20, 0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 20;
+
+        transform-origin: top right;
+        transform: scale(0.9);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .links.open {
+        transform: scale(1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
