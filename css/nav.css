@@ -59,7 +59,7 @@ a.brand {
 }
 
 .links li a:hover {
-    color: #a3202f;
+    color: #ff5468;
     background: rgba(163, 32, 47, 0.12);
 }
 
@@ -99,7 +99,7 @@ a.brand {
 }
 
 .hamburger:hover span {
-    background: #a3202f;
+    background: #ff5468;
 }
 
 .hamburger.open span:nth-child(1) {
