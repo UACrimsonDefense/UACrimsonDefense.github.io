@@ -8,10 +8,25 @@ footer {
     align-items: center;
     gap: 1.25rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(10, 10, 10, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-bottom: none;
-    backdrop-filter: blur(10px);
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    footer {
+        background: rgba(10, 10, 10, 0.55);
+        backdrop-filter: blur(14px) saturate(150%);
+        -webkit-backdrop-filter: blur(14px) saturate(150%);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    footer {
+        background: rgba(10, 10, 10, 0.96);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
 }
 
 .socialIcons {

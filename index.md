@@ -1,6 +1,0 @@
----
-layout: base.njk
-title: Homepage
----
-
-<h1>Hello World!</h1>
