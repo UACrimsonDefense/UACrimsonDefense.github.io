@@ -1,12 +1,19 @@
 <nav class="navbar">
-    <a class="brand" href="/"><img class="logo" alt="Crimson Defense Logo" src="/img/CrimsonDefenseLogoTransparent.svg"></a>
+    <a class="brand" href="/"><img class="logo" alt="Crimson Defense Logo" src="/img/transparentCDLogo.png"></a>
     <button class="hamburger" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
         <span></span>
         <span></span>
         <span></span>
     </button>
     <ul class="links" id="nav-links">
-        <li><a href="/about">About</a></li>
+        <li class="dropdown">
+            <button class="dropdown-toggle" id="about-toggle" aria-expanded="false" aria-controls="about-menu">About <i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button>
+            <ul class="dropdown-menu" id="about-menu">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/club-leadership">Club Leadership</a></li>
+                <li><a href="/faqs">FAQs</a></li>
+            </ul>
+        </li>
         <li><a href="/meetings">Club Meetings</a></li>
         <li><a href="/blog">Blog</a></li>
         <li><a href="/ctf">Our CTF'S</a></li>

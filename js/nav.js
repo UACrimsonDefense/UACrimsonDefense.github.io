@@ -16,3 +16,19 @@ navToggle.addEventListener("click", () => {
 
 mobileQuery.addEventListener("change", syncInert);
 syncInert();
+
+const dropdown = document.querySelector(".dropdown");
+const dropdownToggle = document.getElementById("about-toggle");
+
+dropdownToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    const isOpen = dropdown.classList.toggle("open");
+    dropdownToggle.setAttribute("aria-expanded", isOpen);
+});
+
+document.addEventListener("click", (event) => {
+    if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove("open");
+        dropdownToggle.setAttribute("aria-expanded", "false");
+    }
+});

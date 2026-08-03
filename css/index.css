@@ -62,6 +62,32 @@
     }
 }
 
+.club-painting {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 5vw 4rem;
+    text-align: center;
+}
+
+.club-painting img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+.painting-credit {
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    color: #f2f2f2;
+    margin: 0.9rem 0 0;
+}
+
+.painting-credit a {
+    color: #ff5468;
+}
+
 .schedule {
     max-width: 1600px;
     margin: 0 auto;
@@ -80,7 +106,7 @@
 }
 
 .schedule-note a {
-    color: #c94454;
+    color: #ff5468;
 }
 
 .schedule-room {
@@ -94,7 +120,7 @@
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid #f2f2f2;
     border-radius: 1.25rem;
     overflow: hidden;
 }
@@ -103,7 +129,7 @@
     display: flex;
     flex-direction: column;
     padding: 1.75rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    border-right: 1px solid #f2f2f2;
 }
 
 .day-column:last-child {
@@ -129,7 +155,7 @@
 }
 
 .meeting-block + .meeting-block {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid #f2f2f2;
 }
 
 .meeting-block .time {
@@ -137,7 +163,7 @@
     font-family: "Courier New", monospace;
     font-size: 0.85rem;
     letter-spacing: 0.03em;
-    color: #c94454;
+    color: #ff5468;
     margin-bottom: 0.35rem;
 }
 
@@ -147,7 +173,7 @@
 }
 
 .meeting-block p {
-    color: rgba(242, 242, 242, 0.55);
+    color: #f2f2f2;
     font-size: 0.9rem;
     margin: 0.25rem 0 0;
 }
@@ -158,11 +184,34 @@
 }
 
 .meeting-block.featured .time {
-    color: #a3202f;
+    color: #ff5468;
 }
 
 .meeting-block.featured h4 {
     font-weight: 700;
+}
+
+.discord {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1rem 5vw 5rem;
+    text-align: center;
+}
+
+.discord i {
+    font-size: 4rem;
+    color: #ff5468;
+}
+
+.schedule h2 {
+    font-size: 1.75rem;
+    margin: 0 0 0.4rem;
+}
+
+.schedule-note {
+    font-size: 0.9rem;
+    color: rgba(242, 242, 242, 0.55);
+    margin: 1.25rem 0 0;
 }
 
 @media (max-width: 768px) {

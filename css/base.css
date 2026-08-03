@@ -6,7 +6,11 @@ body {
     margin: 0;
     background-color: #1a1a1a;
     color: #f2f2f2;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
 }
 
 .skip-link {
