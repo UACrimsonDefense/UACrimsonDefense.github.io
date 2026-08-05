@@ -1,0 +1,118 @@
+.hero {
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5rem 5vw 4rem;
+}
+
+.cdctf-box {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem 5vw;
+    background: rgba(10, 10, 10, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .cdctf-box {
+        background: rgba(10, 10, 10, 0.55);
+        backdrop-filter: blur(14px) saturate(150%);
+        -webkit-backdrop-filter: blur(14px) saturate(150%);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .cdctf-box {
+        background: rgba(10, 10, 10, 0.94);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 5vw, 3.75rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+}
+
+.hero-text p {
+    color: rgba(242, 242, 242, 0.65);
+    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    line-height: 1.5;
+    margin: 0 0 2rem;
+}
+
+.hero-photo {
+    width: 50%;
+    height: auto;
+    justify-self: end;
+}
+
+.cdctf-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+}
+
+.cdctf-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.cdctf-detail:last-child {
+    border-bottom: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.cdctf-detail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    justify-self: end;
+}
+
+.cdctf-detail-text a {
+    color: #ff5468;
+}
+
+@media (max-width: 768px) {
+    .cdctf-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .cdctf-detail-img {
+        justify-self: center;
+    }
+}
+
+.cdctf-note {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+    font-size: 0.9rem;
+    color: rgba(242, 242, 242, 0.55);
+}
+
+.cdctf-note a {
+    color: #ff5468;
+}
+
+.cdctf-scoreboard-note {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f2f2f2;
+}
+
+.cdctf-scoreboard-note a {
+    color: #ff5468;
+}
