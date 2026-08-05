@@ -4,3 +4,4 @@ _site/
 *.log
 .env
 .claude
+*:Zone.Identifier
