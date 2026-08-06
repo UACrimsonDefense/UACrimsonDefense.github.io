@@ -8,6 +8,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/cdctf.css");
     eleventyConfig.addPassthroughCopy("css/uactf.css");
     eleventyConfig.addPassthroughCopy("css/scoreboard.css");
+    eleventyConfig.addPassthroughCopy("css/writeup.css");
     eleventyConfig.addPassthroughCopy("img/transparentCDLogo.png");
     eleventyConfig.addPassthroughCopy("img/ClubPainting.jpg");
     eleventyConfig.addPassthroughCopy("img/CDCTF_logo_fin.svg");

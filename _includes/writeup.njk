@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+<article class="writeup">
+    <div class="writeup-container">
+        <a class="writeup-back" href="/scoreboard">&larr; Back to Scoreboard</a>
+        <h1>{{ title }}</h1>
+        {% if author or writeupDate %}
+        <p class="writeup-meta">
+            {%- if author %}{{ author }}{% endif -%}
+            {%- if author and writeupDate %} - {% endif -%}
+            {%- if writeupDate %}{{ writeupDate }}{% endif -%}
+        </p>
+        {% endif %}
+        <div class="writeup-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>

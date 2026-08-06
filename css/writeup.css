@@ -1,0 +1,111 @@
+.writeup-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 5vw 5rem;
+}
+
+.writeup-back {
+    display: inline-block;
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    color: rgba(242, 242, 242, 0.85);
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+
+.writeup-back:hover {
+    color: #ff5468;
+}
+
+.writeup-container h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.15;
+    margin: 0 0 0.75rem;
+}
+
+.writeup-meta {
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    color: rgba(242, 242, 242, 0.85);
+    margin: 0 0 2.5rem;
+}
+
+.writeup-body {
+    color: rgba(242, 242, 242, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+.writeup-body h2 {
+    font-size: 1.5rem;
+    margin: 2.5rem 0 1rem;
+}
+
+.writeup-body h3 {
+    font-size: 1.2rem;
+    margin: 2rem 0 0.75rem;
+}
+
+.writeup-body p {
+    margin: 0 0 1.25rem;
+}
+
+.writeup-body a {
+    color: #ff5468;
+}
+
+.writeup-body ul,
+.writeup-body ol {
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.writeup-body li {
+    margin: 0.4rem 0;
+}
+
+.writeup-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    margin: 1.5rem 0;
+}
+
+.writeup-body blockquote {
+    margin: 1.5rem 0;
+    padding: 0.25rem 0 0.25rem 1.25rem;
+    border-left: 2px solid #a3202f;
+    color: rgba(242, 242, 242, 0.65);
+}
+
+.writeup-body code {
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.3rem;
+    padding: 0.15rem 0.4rem;
+}
+
+.writeup-body pre {
+    background: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+}
+
+.writeup-body pre code {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.writeup-body hr {
+    border: none;
+    border-top: 1px solid rgba(242, 242, 242, 0.15);
+    margin: 2.5rem 0;
+}
