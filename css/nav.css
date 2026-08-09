@@ -58,6 +58,8 @@ a.brand {
 .links {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 0.25rem;
 }
 
@@ -70,6 +72,7 @@ a.brand {
     color: azure;
     padding: 0.4rem 1rem;
     border-radius: 999px;
+    white-space: nowrap;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -94,6 +97,7 @@ a.brand {
     border: none;
     cursor: pointer;
     padding: 0.4rem 1rem;
+    white-space: nowrap;
     border-radius: 999px;
 }
 

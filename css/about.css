@@ -1,0 +1,135 @@
+.about-box {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem 5vw;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .about-box {
+        background: rgba(10, 10, 10, 0.55);
+        backdrop-filter: blur(14px) saturate(150%);
+        -webkit-backdrop-filter: blur(14px) saturate(150%);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .about-box {
+        background: rgba(10, 10, 10, 0.94);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+.about-box .hero-text {
+    align-items: center;
+}
+
+.about-box .hero-text h1 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+}
+
+.about-est {
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    color: rgba(242, 242, 242, 0.55);
+    margin: 0;
+}
+
+.about-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+}
+
+.about-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.about-detail:last-child {
+    border-bottom: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.about-detail-text h2 {
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+}
+
+.about-detail-text p {
+    color: rgba(242, 242, 242, 0.75);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.about-detail-text p:last-child {
+    margin-bottom: 0;
+}
+
+.about-detail-text ul {
+    color: rgba(242, 242, 242, 0.75);
+    line-height: 1.6;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.about-detail-text li + li {
+    margin-top: 0.75rem;
+}
+
+.about-detail-text a {
+    color: #ff5468;
+}
+
+.about-detail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .about-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .about-detail img {
+        order: -1;
+    }
+}
+
+.discord {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 1rem 5vw 5rem;
+    text-align: center;
+}
+
+.discord i {
+    font-size: 4rem;
+    color: #ff5468;
+}
+
+.about-disclaimer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+}
+
+.about-disclaimer p {
+    border-left: 2px solid #a3202f;
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    color: rgba(242, 242, 242, 0.75);
+    line-height: 1.6;
+    margin: 0;
+}
