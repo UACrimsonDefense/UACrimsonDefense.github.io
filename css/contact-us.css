@@ -1,0 +1,125 @@
+.contact-box {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem 5vw;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .contact-box {
+        background: rgba(10, 10, 10, 0.55);
+        backdrop-filter: blur(14px) saturate(150%);
+        -webkit-backdrop-filter: blur(14px) saturate(150%);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .contact-box {
+        background: rgba(10, 10, 10, 0.94);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+.contact-box .hero-text {
+    align-items: center;
+}
+
+.contact-box .hero-text h1 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+}
+
+.contact-subheading {
+    color: rgba(242, 242, 242, 0.65);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 9rem;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    background: #a3202f;
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-icon:hover {
+    background: #ff5468;
+    transform: translateY(-2px);
+}
+
+.contact-handle {
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    color: #f2f2f2;
+    text-align: center;
+    word-break: break-word;
+}
+
+.contact-location {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+    text-align: center;
+}
+
+.contact-location h2 {
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+}
+
+.contact-location p {
+    color: rgba(242, 242, 242, 0.75);
+    line-height: 1.6;
+    margin: 0 0 2rem;
+}
+
+.contact-map-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contact-map-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}

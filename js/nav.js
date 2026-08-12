@@ -32,3 +32,7 @@ document.addEventListener("click", (event) => {
         dropdownToggle.setAttribute("aria-expanded", "false");
     }
 });
+
+console.log(
+  "Why did you open the console?"
+);

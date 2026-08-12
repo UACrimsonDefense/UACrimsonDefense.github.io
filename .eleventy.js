@@ -16,6 +16,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/index.css");
     eleventyConfig.addPassthroughCopy("css/about.css");
     eleventyConfig.addPassthroughCopy("css/competition-team.css");
+    eleventyConfig.addPassthroughCopy("css/contact-us.css");
     eleventyConfig.addPassthroughCopy("css/club-leadership.css");
     eleventyConfig.addPassthroughCopy("css/meetings.css");
     eleventyConfig.addPassthroughCopy("css/cdctf.css");
