@@ -1,0 +1,111 @@
+.outreach-box {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 3rem 5vw;
+    text-align: center;
+    background: rgba(10, 10, 10, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1.25rem;
+}
+
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+    .outreach-box {
+        background: rgba(10, 10, 10, 0.55);
+        backdrop-filter: blur(14px) saturate(150%);
+        -webkit-backdrop-filter: blur(14px) saturate(150%);
+    }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+    .outreach-box {
+        background: rgba(10, 10, 10, 0.94);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+}
+
+.outreach-box .hero-text {
+    align-items: center;
+}
+
+.outreach-box .hero-text h1 {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 0.75rem;
+}
+
+.outreach-subheading {
+    color: rgba(242, 242, 242, 0.65);
+    font-size: 1.05rem;
+    margin: 0;
+}
+
+.outreach-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5vw 5rem;
+}
+
+.outreach-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 0;
+    border-top: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.outreach-detail:last-child {
+    border-bottom: 1px solid rgba(242, 242, 242, 0.15);
+}
+
+.outreach-detail-text h2 {
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+}
+
+.outreach-detail-text p {
+    color: rgba(242, 242, 242, 0.75);
+    line-height: 1.6;
+    margin: 0 0 1rem;
+}
+
+.outreach-detail-text p:last-child {
+    margin-bottom: 0;
+}
+
+.outreach-detail-text a {
+    color: #ff5468;
+}
+
+.outreach-detail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+}
+
+.outreach-detail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.outreach-detail-caption {
+    font-family: "Courier New", monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+    color: rgba(242, 242, 242, 0.55);
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 768px) {
+    .outreach-detail {
+        grid-template-columns: 1fr;
+    }
+
+    .outreach-detail > img,
+    .outreach-detail > .outreach-detail-images {
+        order: -1;
+    }
+}

@@ -17,6 +17,8 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/about.css");
     eleventyConfig.addPassthroughCopy("css/competition-team.css");
     eleventyConfig.addPassthroughCopy("css/contact-us.css");
+    eleventyConfig.addPassthroughCopy("css/faqs.css");
+    eleventyConfig.addPassthroughCopy("css/outreach.css");
     eleventyConfig.addPassthroughCopy("css/club-leadership.css");
     eleventyConfig.addPassthroughCopy("css/meetings.css");
     eleventyConfig.addPassthroughCopy("css/cdctf.css");
@@ -29,5 +31,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img/UACTF_double_logo.png");
     eleventyConfig.addPassthroughCopy("img/Crimson-Defense-X.png");
     eleventyConfig.addPassthroughCopy("img/ua_ccdcteam_2026.jpeg");
+    eleventyConfig.addPassthroughCopy("img/scioly_2025.JPG");
+    eleventyConfig.addPassthroughCopy("img/scioly_2026.jpg");
     eleventyConfig.addPassthroughCopy("js/nav.js");
 };
