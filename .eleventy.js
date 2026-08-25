@@ -10,6 +10,25 @@ export default function(eleventyConfig) {
         },
     });
 
+    eleventyConfig.addCollection("posts", (collectionApi) => {
+        return collectionApi.getFilteredByGlob("./posts/*.md").sort((a, b) => b.date - a.date);
+    });
+
+    eleventyConfig.addFilter("readableDate", (date) => {
+        if (!date) return "";
+        return new Date(date).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC",
+        });
+    });
+
+    eleventyConfig.addFilter("rfc822Date", (date) => {
+        if (!date) return "";
+        return new Date(date).toUTCString();
+    });
+
     eleventyConfig.addPassthroughCopy("css/base.css");
     eleventyConfig.addPassthroughCopy("css/nav.css");
     eleventyConfig.addPassthroughCopy("css/footer.css");
@@ -25,6 +44,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/uactf.css");
     eleventyConfig.addPassthroughCopy("css/scoreboard.css");
     eleventyConfig.addPassthroughCopy("css/writeup.css");
+    eleventyConfig.addPassthroughCopy("css/blog.css");
     eleventyConfig.addPassthroughCopy("img/transparentCDLogo.png");
     eleventyConfig.addPassthroughCopy("img/ClubPainting.jpg");
     eleventyConfig.addPassthroughCopy("img/CDCTF_logo_fin.svg");
@@ -33,5 +53,6 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img/ua_ccdcteam_2026.jpeg");
     eleventyConfig.addPassthroughCopy("img/scioly_2025.JPG");
     eleventyConfig.addPassthroughCopy("img/scioly_2026.jpg");
+    eleventyConfig.addPassthroughCopy("img/blog");
     eleventyConfig.addPassthroughCopy("js/nav.js");
 };

@@ -3,4 +3,48 @@ layout: base.njk
 title: Blog
 ---
 
-<h1>Hello Blog!</h1>
+<section class="hero blog-box">
+    <div class="hero-text">
+        <h1>Blog</h1>
+        <p class="blog-subheading">Writeups, meeting recaps, and news from Crimson Defense.</p>
+        <a class="blog-rss" href="/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS Feed</a>
+    </div>
+</section>
+
+{% set posts = collections.posts %}
+{% if posts.length %}
+{% set featured = posts[0] %}
+<section class="blog-featured-wrap">
+    <a class="blog-featured" href="{{ featured.url }}">
+        <span class="blog-featured-label">Latest</span>
+        <h2>{{ featured.data.title }}</h2>
+        {% if featured.data.excerpt %}<p class="blog-excerpt">{{ featured.data.excerpt }}</p>{% endif %}
+        <p class="blog-meta">
+            {%- if featured.data.author %}{{ featured.data.author }}{% endif -%}
+            {%- if featured.data.author and featured.date %} - {% endif -%}
+            {%- if featured.date %}{{ featured.date | readableDate }}{% endif -%}
+        </p>
+    </a>
+</section>
+
+{% if posts.length > 1 %}
+<section class="blog-list-wrap">
+    <h2>More Posts</h2>
+    <ul class="blog-list">
+        {% for post in posts %}
+        {% if not loop.first %}
+        <li>
+            <span class="blog-list-date">{{ post.date | readableDate }}</span>
+            <a class="blog-list-title" href="{{ post.url }}">{{ post.data.title }}</a>
+            {% if post.data.author %}<span class="blog-list-author">{{ post.data.author }}</span>{% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+{% else %}
+<section class="blog-featured-wrap">
+    <p class="blog-empty">No posts yet — check back soon.</p>
+</section>
+{% endif %}

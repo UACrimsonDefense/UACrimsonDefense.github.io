@@ -44,6 +44,14 @@
     {% if "/writeups/" in page.url %}
     <link rel="stylesheet" href="/css/writeup.css">
     {% endif %}
+    {% if page.url == "/blog/" or "/posts/" in page.url %}
+    <link rel="stylesheet" href="/css/blog.css">
+    {% endif %}
+    {% if "/posts/" in page.url %}
+    <link rel="stylesheet" href="/css/writeup.css">
+    {% endif %}
+    <link rel="alternate" type="application/rss+xml" title="{{ metadata.title }} Blog" href="/feed.xml">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

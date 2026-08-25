@@ -2,16 +2,29 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #1a1a1a;
+}
+
 body {
     margin: 0;
     position: relative;
+    isolation: isolate;
     background-color: #1a1a1a;
     color: #f2f2f2;
     font-family: "Kumbh Sans", sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex: 1 0 auto;
 }
 
 .page-bg {
-    position: absolute;
+    position: fixed;
     inset: 0;
     width: 100%;
     height: 100%;

@@ -1,0 +1,29 @@
+---
+layout: base.njk
+---
+<article class="writeup">
+    <div class="writeup-container">
+        <a class="writeup-back" href="/blog">&larr; Back to Blog</a>
+        <h1>{{ title }}</h1>
+        {% if author or date %}
+        <p class="writeup-meta">
+            {%- if author %}{{ author }}{% endif -%}
+            {%- if author and date %} - {% endif -%}
+            {%- if date %}{{ date | readableDate }}{% endif -%}
+        </p>
+        {% endif %}
+        {% if authorBio %}
+        <p class="blog-author-bio">{{ authorBio }}</p>
+        {% endif %}
+        {% if tags %}
+        <ul class="blog-tags">
+            {% for tag in tags %}
+            <li>{{ tag }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        <div class="writeup-body">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>
