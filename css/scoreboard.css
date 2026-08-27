@@ -150,7 +150,7 @@
 
 .scoreboard-list .points::after {
     content: " pts";
-    color: rgba(242, 242, 242, 0.4);
+    color: rgba(242, 242, 242, 0.55);
 }
 
 .scoreboard-list li.place-1,

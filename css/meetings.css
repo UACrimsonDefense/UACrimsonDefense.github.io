@@ -25,6 +25,11 @@
     margin: 0 0 2rem;
 }
 
+.schedule-heading {
+    font-size: 1.75rem;
+    margin: 0 0 1rem;
+}
+
 .schedule-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

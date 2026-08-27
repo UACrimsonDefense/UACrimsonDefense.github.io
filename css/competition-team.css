@@ -94,12 +94,12 @@
     margin: 0 0 1rem;
 }
 
-.comp-detail-text h4 {
+.comp-detail-text h3 {
     font-size: 1.1rem;
     margin: 1.25rem 0 0.4rem;
 }
 
-.comp-detail-text h4:first-of-type {
+.comp-detail-text h3:first-of-type {
     margin-top: 0;
 }
 
@@ -178,7 +178,7 @@
     margin-top: 0;
 }
 
-.comp-achievements h5 {
+.comp-achievements h4 {
     font-family: "Courier New", monospace;
     font-size: 0.9rem;
     letter-spacing: 0.03em;

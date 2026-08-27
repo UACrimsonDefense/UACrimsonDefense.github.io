@@ -1,0 +1,57 @@
+MIT License
+
+Copyright (c) 2026 Crimson Defense
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to
+deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.
+
+---
+
+EXCEPTIONS TO THE MIT LICENSE
+
+The MIT License above applies only to the source code of this project:
+the code and markup structure of templates, stylesheets, scripts, and
+configuration files. It does not extend to any prose, narrative, or
+written content embedded within those files (for example, page copy, blog
+post text, or CTF writeup content placed directly in a template) — such
+content remains governed by the exceptions below regardless of the file
+type or format in which it is stored.
+
+The following are NOT covered by the MIT License and remain the exclusive
+copyrighted property of Crimson Defense. All rights reserved:
+
+  - All images and photographs (img/)
+  - All logos and brand assets, including the Crimson Defense name,
+    wordmark, and logo
+  - All written content, including blog posts and CTF writeups, in
+    whatever file or format it appears
+
+No Trademark License: Nothing in this license grants any right to use the
+Crimson Defense name, wordmark, logo, or any other brand asset, except as
+required for reasonable and customary use in describing the origin of the
+Software and complying with the attribution requirement above.
+
+No Endorsement or Affiliation: Use of the Crimson Defense name, logos, or
+any brand assets to state or imply endorsement, sponsorship, or affiliation
+with Crimson Defense or the University of Alabama, or to impersonate or
+misrepresent such affiliation, is strictly prohibited.
+
+Contributions: By submitting a pull request or other contribution to this
+project, the contributor agrees that their contribution to the source code
+(as defined above) is licensed under the same MIT License terms as the
+rest of the project.

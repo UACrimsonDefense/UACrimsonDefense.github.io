@@ -40,6 +40,22 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    z-index: 100;
+    background: #a3202f;
+    color: #f2f2f2;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
 .hero-text,
 .hero-photo {
     position: relative;
