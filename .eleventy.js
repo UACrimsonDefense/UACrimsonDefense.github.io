@@ -5,7 +5,7 @@ export default function(eleventyConfig) {
         formats: ["webp", "auto"],
         widths: ["auto"],
         defaultAttributes: {
-            loading: "lazy",
+            loading: "eager",
             decoding: "async",
         },
     });
@@ -35,6 +35,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/footer.css");
     eleventyConfig.addPassthroughCopy("js/nav.js");
     eleventyConfig.addPassthroughCopy("img/transparentCDLogo.png");
+    eleventyConfig.addPassthroughCopy("img/favicon.png");
 
     // index.njk (home page)
     eleventyConfig.addPassthroughCopy("css/index.css");

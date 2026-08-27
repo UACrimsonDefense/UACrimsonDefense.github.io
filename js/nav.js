@@ -33,6 +33,14 @@ document.addEventListener("click", (event) => {
     }
 });
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && dropdown.classList.contains("open")) {
+        dropdown.classList.remove("open");
+        dropdownToggle.setAttribute("aria-expanded", "false");
+        dropdownToggle.focus();
+    }
+});
+
 console.log(
   "Why did you open the console?"
 );
