@@ -3,7 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | Crimson Defense</title>
+    {% if page.url == "/" %}{% set pageTitle = title %}{% else %}{% set pageTitle = title + " | Crimson Defense" %}{% endif %}
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="canonical" href="{{ metadata.url }}{{ page.url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ pageTitle }}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
+    <meta property="og:url" content="{{ metadata.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ metadata.url }}/img/{{ ogImage or 'transparentCDLogo.png' }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" type="image/png" href="/img/favicon.png">
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/nav.css">
