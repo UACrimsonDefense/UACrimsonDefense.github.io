@@ -89,6 +89,10 @@ export default function(eleventyConfig) {
     // scoreboard.njk
     eleventyConfig.addPassthroughCopy("css/scoreboard.css");
 
+    // 404.njk
+    eleventyConfig.addPassthroughCopy("css/404.css");
+    eleventyConfig.addPassthroughCopy("js/404.js");
+
     // writeup.njk
     eleventyConfig.addPassthroughCopy("css/writeup.css");
 

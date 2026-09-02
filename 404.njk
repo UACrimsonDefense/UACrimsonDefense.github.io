@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: Page Not Found
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+
+<section class="hero notfound-hero">
+    <div class="hero-text">
+        <p class="notfound-code">404</p>
+        <h1>This Page Doesn't Exist!</h1>
+        <p>To go back home, you must solve this challenge.</p>
+    </div>
+</section>
+
+<section class="notfound-challenge">
+    <h2>Access Control Challenge</h2>
+    <p>This site checks a browser token before it lets you back through the front door. Take a look at what it's checking, and see if you can convince it to let you in.</p>
+
+    <div class="notfound-widget">
+        <button type="button" id="home-btn" class="notfound-home-btn" aria-disabled="true">
+            <i class="fa-solid fa-lock" aria-hidden="true" id="home-btn-icon"></i>
+            <span id="home-btn-label">Go Home - Access Denied</span>
+        </button>
+        <p id="notfound-status" class="notfound-status" role="status" aria-live="polite">Your current token is not authorized to pass.</p>
+    </div>
+
+    <details class="notfound-hint">
+        <summary>Need a hint?</summary>
+        <p>Open your browser's dev tools and look at what this page is storing about you before it decides whether you're allowed through.</p>
+        <details class="notfound-hint">
+            <summary>Still stuck?</summary>
+            <p>The token claims how it's signed. What happens if it claims not to be signed at all?</p>
+        </details>
+    </details>
+
+    <noscript>
+        <p class="notfound-noscript">This challenge requires JavaScript. Use the navigation menu above to get back home.</p>
+    </noscript>
+</section>
+
+<script src="/js/404.js" defer></script>
