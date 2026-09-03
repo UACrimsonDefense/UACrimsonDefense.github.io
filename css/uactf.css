@@ -96,8 +96,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 5vw 5rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgba(242, 242, 242, 0.55);
+    text-align: center;
 }
 
 .uactf-note a {
