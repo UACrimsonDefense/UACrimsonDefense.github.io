@@ -36,6 +36,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("js/nav.js");
     eleventyConfig.addPassthroughCopy("img/transparentCDLogo.png");
     eleventyConfig.addPassthroughCopy("img/CDLogoSimple.svg");
+    eleventyConfig.addPassthroughCopy("img/icons.svg");
 
     // index.njk (home page)
     eleventyConfig.addPassthroughCopy("css/index.css");
