@@ -3,10 +3,12 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 export default function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         formats: ["webp", "auto"],
-        widths: ["auto"],
+        widths: [400, 800, 1200, 1600, 2000],
+        svgShortCircuit: true,
         defaultAttributes: {
             loading: "eager",
             decoding: "async",
+            sizes: "100vw",
         },
     });
 
