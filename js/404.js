@@ -31,7 +31,10 @@ function checkAccess() {
     btn.setAttribute("aria-disabled", granted ? "false" : "true");
     btn.classList.toggle("unlocked", granted);
     label.textContent = granted ? "Go Home - Access Granted" : "Go Home - Access Denied";
-    icon.className = granted ? "fa-solid fa-lock-open" : "fa-solid fa-lock";
+    icon.querySelector("use").setAttribute(
+        "href",
+        granted ? "/img/icons.svg#lock-open" : "/img/icons.svg#lock",
+    );
     status.textContent = granted ? "Token accepted. You may proceed." : "Your current token is not authorized to pass.";
 
     return granted;
