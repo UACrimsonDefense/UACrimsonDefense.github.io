@@ -103,4 +103,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("css/blog.css");
     eleventyConfig.addPassthroughCopy("img/blog");
 
+    // cyberawarenessmonth26.njk
+    eleventyConfig.addPassthroughCopy("css/cyberawarenessmonth26.css");
+
 };

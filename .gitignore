@@ -6,3 +6,4 @@ _site/
 .env
 .claude
 *:Zone.Identifier
+.vscode
