@@ -49,10 +49,34 @@ a.brand {
     justify-content: center;
     height: 2.25rem;
     width: 2.25rem;
+    flex-shrink: 0;
     border-radius: 50%;
     background: rgba(163, 32, 47, 0.12);
-    margin-right: auto;
     overflow: hidden;
+}
+
+.cam-nav-pill {
+    display: inline-block;
+    margin-left: 1.5rem;
+    margin-right: auto;
+    min-width: 0;
+    max-width: 40vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "Courier New", monospace;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #f2f2f2;
+    background: rgba(163, 32, 47, 0.75);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    transition: background-color 0.2s ease;
+}
+
+.cam-nav-pill:hover {
+    background: rgba(126, 24, 36, 0.85);
 }
 
 .links {
@@ -179,6 +203,13 @@ a.brand {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    .cam-nav-pill {
+        margin-left: 0.75rem;
+        max-width: 52vw;
+        font-size: 0.8rem;
+        padding: 0.4rem 0.75rem;
     }
 
     .links {
