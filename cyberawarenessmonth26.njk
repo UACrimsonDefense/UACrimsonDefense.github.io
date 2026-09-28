@@ -1,0 +1,84 @@
+---
+layout: base.njk
+title: Cyber Awareness Month
+---
+
+<section class="cam-hero">
+    <p class="cam-eyebrow">You scanned a Crimson Defense QR code</p>
+    <h1>This could've been a malicious site.</h1>
+    <p class="cam-hero-text">This one was ours and it's harmless. The next one might not be. Here's a three-step check that takes a couple of seconds.</p>
+</section>
+
+<section class="cam-steps">
+    <h2 class="cam-visually-hidden">Three-step check</h2>
+
+    <div class="cam-step">
+        <span class="cam-step-label">Step 1</span>
+        <h3>Point, don't tap.</h3>
+        <p>Let your camera find the code. It shows you a preview and waits for you, so there's no rush to tap anything.</p>
+    </div>
+
+    <div class="cam-step">
+        <span class="cam-step-label">Step 2</span>
+        <h3>Read the domain.</h3>
+        <p>The owner is the name right before the first single slash. Everything before it can be made up.</p>
+        <p class="cam-step-note">A link shortener (bit.ly, tinyurl, etc.) hides the domain entirely. If you can't read it, don't trust it.</p>
+    </div>
+
+    <div class="cam-step">
+        <span class="cam-step-label">Step 3</span>
+        <h3>Decide.</h3>
+        <p>Only open it if the owner is who you expected. Never log in, pay, or install anything from a random code.</p>
+    </div>
+</section>
+
+<section class="cam-spot">
+    <h2>Spot the fake</h2>
+    <p class="cam-spot-intro">The underlined part is who really owns each site.</p>
+
+    <table class="cam-table">
+        <tr>
+            <th>Address</th>
+            <th>Verdict</th>
+            <th>Who owns it</th>
+        </tr>
+        <tr>
+            <td><code>https://login.<span class="cam-owner">crimsondefense.org</span>/cyberawarenessmonth26</code></td>
+            <td><span class="cam-verdict cam-verdict-real">Real</span></td>
+            <td>Owned by crimsondefense.org</td>
+        </tr>
+        <tr>
+            <td><code>https://crimsondefense.org.<span class="cam-owner">account-verify.co</span>/cyberawarenessmonth26</code></td>
+            <td><span class="cam-verdict cam-verdict-fake">Fake</span></td>
+            <td>Owned by account-verify.co. Our name in front is decoration.</td>
+        </tr>
+        <tr>
+            <td><code>https://<span class="cam-owner">crimsondefense-org.help</span>/cyberawarenessmonth26</code></td>
+            <td><span class="cam-verdict cam-verdict-fake">Fake</span></td>
+            <td>Owned by crimsondefense-org.help. A dash instead of a dot makes it a different site.</td>
+        </tr>
+        <tr>
+            <td><code>https://<span class="cam-owner">cr1msondefense.org</span>/cyberawarenessmonth26</code></td>
+            <td><span class="cam-verdict cam-verdict-fake">Fake</span></td>
+            <td>Owned by cr1msondefense.org. A 1 instead of an i in crimson.</td>
+        </tr>
+    </table>
+
+    <p class="cam-spot-note">Already entered something? Change that password, turn on two-factor authentication, and call your bank if you typed card details.</p>
+</section>
+
+<section class="cam-join">
+    <div class="cam-join-media">
+        <img src="/img/ClubPainting.jpg" alt="Painting of the Crimson Defense club">
+        <p class="painting-credit">Painting by <a href="https://www.instagram.com/charlotte.ann.art" target="_blank" rel="noopener"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Charlotte Gangler</a></p>
+    </div>
+    <div class="cam-join-text">
+        <h2>Learn this with us</h2>
+        <p>Crimson Defense is the University of Alabama's cybersecurity club. No experience needed.</p>
+        <p class="cam-join-meta">General meetings - Wednesdays 6-7 PM - Bevill 1066</p>
+        <div class="cam-join-actions">
+            <a href="/meetings" class="cta">See club meetings</a>
+            <a href="/faqs" class="cta cta-outline">Read the FAQs</a>
+        </div>
+    </div>
+</section>
