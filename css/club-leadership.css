@@ -14,6 +14,10 @@
     margin: 0 0 1rem;
 }
 
+.leadership-list + h2 {
+    margin-top: 2.5rem;
+}
+
 .leadership .term {
     font-family: "Courier New", monospace;
     font-size: 0.85rem;
@@ -51,14 +55,20 @@
 .leadership-list li {
     display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    align-items: baseline;
+    gap: 1rem;
     padding: 0.6rem 0;
     border-bottom: 1px solid rgba(242, 242, 242, 0.15);
     font-size: 0.95rem;
+    /* Names stay on one line; only the role wraps on narrow screens */
+    white-space: nowrap;
+    text-align: right;
 }
 
 .leadership-list .role {
     color: rgba(242, 242, 242, 0.6);
+    white-space: normal;
+    text-align: left;
 }
 
 .leadership-list .role::after {
