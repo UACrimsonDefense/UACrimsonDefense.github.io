@@ -89,7 +89,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("img/UACTFTrophy.jpg");
     eleventyConfig.addPassthroughCopy("img/UACTFVolunteers.jpg");
 
-    // scoreboard.njk
+    // cdctfscoreboard*.njk
     eleventyConfig.addPassthroughCopy("css/scoreboard.css");
 
     // 404.njk
