@@ -119,15 +119,79 @@
     color: #ff5468;
 }
 
-.cdctf-scoreboard-note {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5vw 2rem;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #f2f2f2;
+.cdctf-scoreboards {
+    text-align: center;
 }
 
-.cdctf-scoreboard-note a {
+.cdctf-scoreboards h2 {
+    font-size: 1.75rem;
+    margin: 0 0 1.5rem;
+}
+
+.cdctf-scoreboards a:not(.cta) {
     color: #ff5468;
+}
+
+.cta:focus-visible,
+.cdctf-scoreboards a:focus-visible,
+.cdctf-past-scoreboards summary:focus-visible {
+    outline: 2px solid #f2f2f2;
+    outline-offset: 3px;
+}
+
+.cdctf-past-scoreboards {
+    margin: 1.75rem 0 0;
+}
+
+.cdctf-past-scoreboards summary {
+    display: inline-block;
+    cursor: pointer;
+    color: #ff5468;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.cdctf-past-scoreboards summary::-webkit-details-marker {
+    display: none;
+}
+
+.cdctf-past-scoreboards summary::before {
+    content: "\25B8";
+    content: "\25B8" / "";
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.cdctf-past-scoreboards[open] summary::before {
+    content: "\25BE";
+    content: "\25BE" / "";
+}
+
+.cdctf-past-scoreboards ul {
+    list-style: none;
+    margin: 0.5rem 0 0;
+    padding: 0;
+}
+
+.cdctf-past-scoreboards li a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+}
+
+.cdctf-ctftime {
+    margin: 1.5rem 0 0;
+    color: rgba(242, 242, 242, 0.75);
+}
+
+.cdctf-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
