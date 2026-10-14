@@ -98,6 +98,7 @@ export default function(eleventyConfig) {
 
     // writeup.njk
     eleventyConfig.addPassthroughCopy("css/writeup.css");
+    eleventyConfig.addPassthroughCopy("writeups/pdf");
 
     // blog.njk + posts/*.md
     eleventyConfig.addPassthroughCopy("css/blog.css");
